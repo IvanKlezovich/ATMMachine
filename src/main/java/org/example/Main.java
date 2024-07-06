@@ -7,9 +7,17 @@ import org.example.service.ATMService;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+/**
+ * The {@code Main} class is the entry point of the ATM application.
+ * It handles user interaction with the ATM machine.
+ */
 public class Main {
 
+    /**
+     * The main method that starts the ATM application.
+     *
+     * @param args command line arguments (not used)
+     */
     public static void main(String[] args) {
         ATMService service = new ATMService("cards.txt", 2000L, 10_000L);
         ATMMachine atm = service.getAtm();
